@@ -1,0 +1,105 @@
+html {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+span, p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+body {
+    background-color: rgb(243,235,228);
+}
+.product-image { 
+    width: 100%;
+    display: block;
+} 
+.product-wrapper { 
+    height: 100vh;  
+    display: flex;
+    align-items: center; 
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.product-infor {
+    padding: 32px;
+}
+
+.product-name {
+    font-size: 32px;
+    line-height: 1;
+    padding-bottom: 12px;
+}
+
+.product-type {
+    letter-spacing: 6px;
+}
+
+.product-desc { 
+}
+
+.product-price {
+    display: flex; 
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.product-price-real {
+    font-family: 'Fraunces', serif ;
+    font-size: 32px;
+    padding-right: 12px;
+    color: hsl(158, 36%, 37%);
+}
+
+.product-price > span { 
+    text-decoration: line-through;
+}
+
+.add-to-cart { 
+    display: flex;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.add-to-cart > span {
+    padding: 0 8px;
+    color: white;
+}
+
+.add-to-cart:hover { 
+    background-color: hsl(158, 36%, 32%); 
+}
+
+.prodcut-image-mobile {
+    display: none;
+}
+
+
+@media (max-width:376px) {  
+
+    .product-image { 
+        display: none;
+    }  
+
+    .prodcut-image-mobile {
+        display: block;
+        width: 100%;
+    }
+}
